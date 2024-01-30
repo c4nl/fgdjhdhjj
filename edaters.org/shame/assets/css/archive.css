@@ -1,0 +1,308 @@
+body {
+    background-color: rgba(18,18,18,1);
+    font-family: "pr";
+    color: #fff;
+}
+
+@font-face {
+    font-family: "mc";
+    src: url("/web/20220502185845im_/https://edaters.org/assets/fonts/regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "pr";
+    src: url("/web/20220502185845im_/https://edaters.org/assets/fonts/pr.ttf");
+}
+
+@font-face {
+    font-family: "psb";
+    src: url("/web/20220502185845im_/https://edaters.org/assets/fonts/psb.ttf");
+}
+
+@font-face {
+    font-family: "pb";
+    src: url("/web/20220502185845im_/https://edaters.org/assets/fonts/pb.ttf");
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background-color: rgb(33,33,33);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.archive-box {
+    margin: 0 auto;
+    padding: 2em 0 5em 0;
+}
+
+    .archive-box .top-wrap {
+        text-align: center;
+        margin-bottom: 5em;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        .top-wrap img {
+            padding: 0!important;
+        }
+
+        .top-wrap h1 {
+            margin: 0;
+            font-family: mc;
+        }
+
+    .archive-box .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 3em;
+    }
+
+        .archive-box .item {
+            background-color: rgb(33,33,33,1);
+            flex: 0 30%;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+            .archive-box .item > .content {                
+                display: flex;
+                flex-direction: row;
+                padding: 1em;
+                min-height: 175px;
+                position: relative;
+            }
+
+                .archive-box .img-wrap {
+                    text-align: center;
+                }
+
+                    .archive-box img {
+                        height: 100px;
+                        width: 100px;
+                        padding: 1em;
+                        border-radius: 50%;
+                        -webkit-touch-callout: none;
+                        -webkit-user-select: none;
+                        -khtml-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+
+                .archive-box .text-wrap {
+                    padding: 1em 1em 0 1em;
+                    width: 100%;
+                }
+
+                    .archive-box a {
+                        text-decoration: none;
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: #fff;
+                        transition: ease-in-out .1s;
+                        -webkit-touch-callout: none;
+                        -webkit-user-select: none;
+                        -khtml-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                    }
+
+                    .archive-box a:hover {
+                        color: #808080;
+                    }
+
+                    .archive-box p {
+                        font-size: 12px;
+                        overflow-y: scroll;
+                        height: 130px;
+                        padding-right: 25px;
+                    }
+
+                    .archive-box button {
+                        background-color: #fff;
+                        border: none;
+                        border-radius: 15px;
+                        padding: 7px 14px;
+                        font-family: "pr";
+                        -webkit-touch-callout: none;
+                        -webkit-user-select: none;
+                        -khtml-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        transition: .1s ease-in-out;
+                        line-height: 1;
+                        font-weight: 600;
+                    }
+
+                    .archive-box button:hover {
+                        background-color: rgb(200, 200, 200);
+                        cursor: pointer;
+                    }
+
+            .archive-box #item-modal {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, .5);
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                align-items: center;
+            }
+
+                .archive-box #item-modal .close {
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                }
+
+                    .archive-box #item-modal .content {
+                        margin: 0 auto;
+                        width: 30%;
+                        height: 100%;
+                        padding: 1em;
+                        padding-top: .2em;
+                        border-radius: 1em;
+                        margin-top: 1em;
+                        z-index: 3;
+                        background-color: rgba(15, 15, 15, 1);
+                    }
+
+                        .archive-box #item-modal .close:hover {
+                            cursor: pointer;
+                        }
+
+                        .archive-box #item-modal .display {
+                            width: 100%;
+                            height: calc(100% - 4em);
+                            overflow: auto;
+                            -webkit-overflow-scrolling: touch;
+                            margin-top: 1em;
+                        }
+                        
+                        .archive-box #item-modal .display img:last-child {
+                            margin-bottom: 0;
+                        }
+
+                            .archive-box #item-modal img {
+                                width: 100%;
+                                height: auto;
+                                border-radius: 10px 0px 0px 10px;
+                                padding: 0;
+                                margin-bottom: 1em;
+                            }
+
+                            .archive-box #item-modal video {
+                                width: 100%;
+                                height: auto;
+                                border-radius: 0px;
+                                padding: 0;
+                                margin-bottom: 1em;
+                                border-radius: 10px 0px 0px 10px;
+                            }
+
+/* Media queries */
+
+@media (max-width: 1400px) {
+
+    .archive-box .img-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .archive-box .img-wrap img {
+            margin: 0 auto;
+        }
+
+        .archive-box .img-wrap button {
+            width: 100px;
+            margin: 0 auto;
+        }
+
+    .archive-box .item > .content {
+        flex-direction: column;
+    }
+
+        .archive-box .item p {
+            padding-right: 0px!important;
+        }
+
+    .archive-box #item-modal .content {
+        width: 85%;
+    }
+
+        .archive-box #item-modal .display {
+            overflow-y: scroll !important;
+            -webkit-overflow-scrolling: touch;
+        }
+
+}
+
+@media (max-width: 1000px) {
+
+    .archive-box .row {
+        flex-direction: column;
+        margin-bottom: 0;
+        width: 90%;
+    }
+
+    .archive-box .item {
+        margin-bottom: 2em;
+        align-self: baseline;
+        width: 100%;
+    }
+
+    .archive-box .text-wrap {
+        text-align: center;
+        width: auto;
+    }
+
+        .archive-box p {
+            height: auto;
+            max-height: 125px;
+        }
+
+}
+/*
+     FILE ARCHIVED ON 18:58:45 May 02, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:10:42 Jan 08, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 157.514
+  exclusion.robots: 0.13
+  exclusion.robots.policy: 0.119
+  RedisCDXSource: 25.81
+  esindex: 0.011
+  LoadShardBlock: 111.763 (3)
+  PetaboxLoader3.datanode: 84.192 (4)
+  CDXLines.iter: 16.894 (3)
+  PetaboxLoader3.resolve: 54.843 (2)
+  load_resource: 50.631
+*/

@@ -1,0 +1,82 @@
+body {
+    background-color: #000;
+    font-family: "mc";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: "mc";
+    src: url("/web/20220502185753im_/https://edaters.org/assets/fonts/regular.otf") format("opentype");
+}
+
+.landing {
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .landing-logo {
+        width: 20em;
+    }
+
+    .landing a {
+        color: #fff;
+        text-decoration: none;
+        transition: ease-in-out .1s;
+    }
+
+    .landing a:hover {
+        color: #7700FF;
+        text-decoration: none;
+    }
+
+    .landing .archive {
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+
+/* Media query */
+@media (max-width: 1000px) {
+
+    .body {
+        width: 100%;
+    }
+
+    .landing {
+        width: 100%;
+    }
+
+    pre {
+        font-size: 9px;
+    }
+
+}
+/*
+     FILE ARCHIVED ON 18:57:53 May 02, 2022 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:45:58 Jan 08, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 397.908
+  exclusion.robots: 0.07
+  exclusion.robots.policy: 0.064
+  cdx.remote: 0.05
+  esindex: 0.006
+  LoadShardBlock: 41.333 (3)
+  PetaboxLoader3.datanode: 62.598 (4)
+  CDXLines.iter: 21.502 (3)
+  load_resource: 71.769
+  PetaboxLoader3.resolve: 35.76
+*/
